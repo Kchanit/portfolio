@@ -85,7 +85,7 @@ export default function AboutPage() {
                 <div key={index} className="relative">
                   <div className="group">
                     <div className="cursor-pointer">{skill.icon}</div>
-                    <div className="opacity-0 bg-black text-white text-xs rounded-md py-1 absolute z-10 bottom-full left-1/2 transform -translate-x-1/2 translate-y-px group-hover:opacity-100 group-hover:translate-y-0 transition-opacity duration-300">
+                    <div className="opacity-0 bg-black text-white text-xs rounded-md py-1 absolute z-10 bottom-full left-1/2 transform -translate-x-1/2 translate-y-px group-hover:opacity-100 px-2 group-hover:translate-y-0 transition-opacity duration-300">
                       {skill.title}
                     </div>
                   </div>
