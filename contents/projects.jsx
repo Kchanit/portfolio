@@ -1,6 +1,19 @@
 export const data = [
   {
     date: "2023",
+    title: "Brewsfolio",
+    subtitle: "",
+    link: "https://github.com/Kchanit/brewsfolio-backend-hexagonal",
+    description: [
+      `(Fullstack) Built a dynamic beer collection platform with Next.js and Golang (Fiber) using hexagonal design for
+    modularity. Leveraged GORM and MySQL for data management, enabling users to curate collections,
+    contribute reviews, and explore diverse beers. The Go backend features a REST API, JWT authentication, and
+    robust data handling with GORM.`,
+    ],
+    skills: ["Next.js", "Golang", "MySQL"],
+  },
+  {
+    date: "2023",
     title: "EventHub",
     subtitle: "University Event Management Website",
     link: "https://github.com/Kchanit/EventHub",
