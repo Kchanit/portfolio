@@ -43,19 +43,20 @@ export const data = [
 
     skills: ["Flutter", "Google API", "MySQL"],
   },
-  {
-    date: "2023",
-    title: "Web Portfolio",
-    subtitle: "Personal Portfolio Website",
-    description:
-      "This website is a personal portfolio website that showcases my skills and projects.",
-    skills: ["React", "Next.js", "Tailwind CSS"],
-  },
+  // {
+  //   date: "2023",
+  //   title: "Web Portfolio",
+  //   subtitle: "Personal Portfolio Website",
+  //   description:
+  //     "This website is a personal portfolio website that showcases my skills and projects.",
+  //   skills: ["React", "Next.js", "Tailwind CSS"],
+  // },
   {
     date: "2022",
     title: "Problem Reporting and Management System",
-    description:
-      "Create a problem reporting and management system using JavaFX based on user’s requirement.",
+    description: `Developed a comprehensive problem reporting and management system using JavaFX based on user’s
+      requirement. This system provide issue tracking and result within the university, enhancing operational
+      efficiency`,
     skills: ["Java"],
   },
   {
