@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "@/components/Navbar";
-import { data } from "@/contents/about";
-import { skills } from "@/contents/skills";
+import Navbar from "../../components/Navbar";
+import { data } from "../../contents/about";
+import { skills } from "../../contents/skills";
 import { TypewriterEffect } from "../../components/ui/typewriter-effect";
 
 export default function AboutPage() {

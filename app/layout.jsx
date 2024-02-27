@@ -2,8 +2,6 @@ import { Roboto_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 

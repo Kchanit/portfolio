@@ -1,6 +1,6 @@
-import { data } from "@/contents/projects";
-import ProjectCard from "@/components/ProjectCard";
-import Navbar from "@/components/Navbar";
+import { data } from "../../contents/projects";
+import ProjectCard from "../../components/ProjectCard";
+import Navbar from "../../components/Navbar";
 
 export default function ProjectPage() {
   return (
