@@ -5,12 +5,12 @@ export default function Navbar() {
       <Link href="/" className="text-zinc-800 hover:text-zinc-500 duration-200">
         Home
       </Link>
-      <Link
+      {/* <Link
         href="/projects"
         className="text-zinc-800 hover:text-zinc-500 duration-200"
       >
         Projects
-      </Link>
+      </Link> */}
       <Link
         href="/about"
         className="text-zinc-800 hover:text-zinc-500 duration-200"

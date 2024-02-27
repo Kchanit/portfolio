@@ -2,17 +2,22 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import { data } from "@/contents/about";
 import { skills } from "@/contents/skills";
+import { TypewriterEffect } from "../../components/ui/typewriter-effect";
 
 export default function AboutPage() {
+  const words = [
+    { text: data.name.split(" ")[0], className: "text-3xl md:text-4xl" },
+    { text: data.name.split(" ")[1], className: "text-3xl md:text-4xl" },
+  ];
+
   return (
     <div className="min-h-screen py-4 bg-gradient-to-br  from-indigo-50 via-white to-cyan-100">
       <div className="mx-4 md:mx-8 lg:mx-44 md:mb-5 ">
         <Navbar />
-
-        <div className="max-w-2xl mx-auto p-4 md:p-8 bg-white rounded-2xl shadow-lg mt-8 ">
-          <h1 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4">
-            {data.name}
-          </h1>
+        <div className=" max-w-2xl mx-auto p-4 md:p-8 bg-white rounded-2xl shadow-lg mt-8 ">
+          <div className="flex justify-start mb-4">
+            <TypewriterEffect words={words} />
+          </div>
           <p className="text-gray-800 mb-4">{data.description}</p>
           {/* 
             Email
@@ -36,29 +41,30 @@ export default function AboutPage() {
               </svg>
               {data.email}
             </div>
-            <div className="flex gap-2 mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-                />
-              </svg>
-              {data.location}
-            </div>
           </a>
+
+          <div className="flex gap-2 mb-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            {data.location}
+          </div>
           {/* 
             Social media Links
           */}
